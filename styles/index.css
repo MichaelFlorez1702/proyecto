@@ -1,66 +1,155 @@
-/* General styles */
+/* General styling */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .hero {
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .hero a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color:  #093931;;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e8f804;
+}
+
+/* Hero section styling */
+.hero {
+  background-color: #093931;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h2 {
+  color: #e8f804;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  color: #e8f804;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: #050505;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main section styling */
+main {
+  padding: 50px 0;
+}
+
+.contacto,
+.productos,
+.collection,
+.selection,
+.story {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.TitleThree {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.productos,
+.collection,
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productos img,
+.collection img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.imagenCua img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.story img {
+  width: 100%;
+}
+
+/* Footer styling */
+footer {
+  background-color:  #093931;
+}
+
+.PartUno,
+.partDos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.izquierda,
+.derecha,
+.izq,
+.cen,
+.der {
+  flex: 1;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+footer button {
+  background-color: #d3e016da;
+  color: #070706;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
