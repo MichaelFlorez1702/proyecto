@@ -9,6 +9,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  color: #e8f804;
 }
 
 /* Header styling */
@@ -29,6 +30,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 nav li {
@@ -43,6 +45,7 @@ nav a {
 
 /* Hero section styling */
 .hero {
+  
   background-color: #093931;
   text-align: center;
   padding: 50px 0;
@@ -95,7 +98,14 @@ main {
   justify-content: space-between;
 }
 
-.productos img,
+.productos img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
 .collection img {
   width: 200px;
   height: 200px;
@@ -104,10 +114,11 @@ main {
 }
 
 .imagenCua img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
+  
 }
 
 .story img {
@@ -121,6 +132,7 @@ footer {
 
 .PartUno,
 .partDos {
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
