@@ -123,13 +123,7 @@ hr {
     margin-bottom: 15px;
 }
 
-.ring img, .earrings img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: 15px;
-    border-radius: 5px;
-}
+
 
 .ring h5, .earrings h5 {
     margin: 0 0 5px;
@@ -139,6 +133,40 @@ hr {
     margin: 0;
     color: #666;
     font-size: 0.9em;
+}
+
+.ring{
+  display: flex;
+  justify-content: space-between;
+}
+
+.earrings{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ring div{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 250px 0px 0px;
+  gap: 10px;
+}
+
+.earrings div{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 250px 0px 0px;
+  gap: 10px;
+}
+
+.ring div img{
+  width: 30px;
+  height: 30px;
+}
+
+.earrings div img{
+  width: 30px;
+  height: 30px;
 }
 
 .btn {
