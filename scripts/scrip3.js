@@ -209,4 +209,33 @@ const products = [
     console.log(buscarProductosPorNombre(products, "Earrings"));
 
 // Ejercicio 4
+<<<<<<< HEAD
     
+=======
+    // Función para ordenar un array de productos por precio (ascendente o descendente)
+    function ordenarProductosPorPrecio(products, orden) {
+        // Crear una copia del array
+        const productosCopia = [...products];
+        
+        const compararPorPrecio = (a, b) => {
+            if (a.precio < b.precio) {
+                return orden === "ascendente" ? -1 : 1;
+            } else if (a.precio > b.precio) {
+                return orden === "ascendente" ? 1 : -1;
+            } else {
+                return 0;
+            }
+        };
+    
+        return productosCopia.sort(compararPorPrecio);
+    }
+    
+    // Pruebas
+    const productosAscendente = ordenarProductosPorPrecio(products, "ascendente");
+    console.log("Productos ordenados ascendentemente por precio:");
+    console.log(productosAscendente.map(p => `${p.nombre}: $${p.precio}`));
+    
+    const productosDescendente = ordenarProductosPorPrecio(products, "descendente");
+    console.log("\nProductos ordenados descendentemente por precio:");
+    console.log(productosDescendente.map(p => `${p.nombre}: $${p.precio}`));
+>>>>>>> 099937f460941b33ffe70dcdcd9ac4ee384eacd7
