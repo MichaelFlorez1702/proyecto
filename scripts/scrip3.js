@@ -145,7 +145,7 @@ const producto2_line4 = {
     nombre: "Glimmering Ring",
     codigo: "A13",
     precio: 620.73,
-    tipoDeAccesorio: "Anillo",
+    tipoDeAccesorio: "anillo",
     imagen: "/images/imagenes-listing-jhon/glimmering.jpg",
     descripcion: `Este anillo de diamantes en oro rosa de 14 quilates.`,
     stock: 52 
@@ -176,10 +176,10 @@ function filtrarProductosPorTipo(productos, tipoProducto) {
   
   // Lista de productos
   const productos = [
-    { nombre: "Luxury Gems Necklase", tipo: "Accesorio", precio: 168.76 },
-    { nombre: "Reflections Necklace", tipo: "Accesorio", precio: 620.73 },
-    { nombre: "Timeless Halo Earrings", tipo: "Accesorio", precio: 620.73 },
-    { nombre: "Exquisite Earrings", tipo: "Accesorio", precio: 327.71 },
+    { nombre: "Luxury Gems Necklase", tipo: "collar", precio: 168.76 },
+    { nombre: "Reflections Necklace", tipo: "collar", precio: 620.73 },
+    { nombre: "Timeless Halo Earrings", tipo: "aretes", precio: 620.73 },
+    { nombre: "Exquisite Earrings", tipo: "aretes", precio: 327.71 },
     
   ];
   
@@ -190,6 +190,31 @@ function filtrarProductosPorTipo(productos, tipoProducto) {
   console.log("Accesorios disponibles:");
   console.table(accesoriosFiltrados); 
   
+
+  //Ejercicio 3
+    function buscarProductosPorNombre(productos, terminoBusqueda) {
+        // Convertimos el término de búsqueda a minúsculas para hacer la búsqueda case-insensitive
+        const termino = terminoBusqueda.toLowerCase();
+        
+        
+        return productos.filter(producto => 
+            producto.nombre.toLowerCase().includes(termino)
+        );
+    }
+
+    // Ejemplo de uso:
+    const resultadoBusqueda = buscarProductosPorNombre(products, "ring");
+    console.log(resultadoBusqueda);
+
+    // diferentes términos de búsqueda
+    console.log("Búsqueda de 'Ring':");
+    console.log(buscarProductosPorNombre(products, "Ring"));
+
+    console.log("\nBúsqueda de 'Necklace':");
+    console.log(buscarProductosPorNombre(products, "Necklace"));
+
+    console.log("\nBúsqueda de 'Earrings':");
+    console.log(buscarProductosPorNombre(products, "Earrings"));
 
   // Ejercicio 4
 // Función para ordenar un array de productos por precio (ascendente o descendente)
