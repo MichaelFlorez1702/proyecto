@@ -238,3 +238,28 @@ const products = [
     console.log(productosDescendente.map(p => `${p.nombre}: $${p.precio}`));
 
 
+// Ejercicio 5: Calcular total de compra
+
+    // Función para calcular el total a pagar
+    function calcularTotalCompra(productos) {
+        return productos.reduce((total, producto) => {
+            return total + (producto.cantidad * producto.precio);
+        }, 0);
+    }
+
+    // Datos de prueba
+    const carritoDeCompras = [
+        { ...producto1_line1, cantidad: 2 },
+        { ...producto2_line2, cantidad: 1 },
+        { ...producto4_line1, cantidad: 3 }
+    ];
+
+    // Calcular y mostrar el total
+    const totalCompra = calcularTotalCompra(carritoDeCompras);
+    console.log(`El total a pagar es: $${totalCompra.toFixed(2)}`);
+
+    // Mostrar detalles del carrito
+    console.log("Detalles del carrito de compras:");
+    carritoDeCompras.forEach(item => {
+        console.log(`${item.nombre}: ${item.cantidad} x $${item.precio} = $${(item.cantidad * item.precio).toFixed(2)}`);
+    });
