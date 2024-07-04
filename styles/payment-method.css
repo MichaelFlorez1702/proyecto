@@ -277,39 +277,107 @@ footer {
     background-color:  #093931;
   }
   
-  .PartUno,
-  .partDos {
-    color: #fff;
+  .footer_section2 div span{
+    margin: 48px 0px 0px 0px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    color: #F5D38E;
   }
   
-  .izquierda,
-  .derecha,
-  .izq,
-  .cen,
-  .der {
-    flex: 1;
+  .footer_section2-list1{
+    margin: 48px 0px 0px 0px;
+  
+  }
+  .footer_section2-list1 li{
+    padding: 8px;
   }
   
-  footer p {
-    margin-bottom: 10px;
+  .footer_section2-list1 a{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
   }
   
-  footer input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    width: 80%;
+  .footer_section2-list2{
+    margin: 48px 0px 0px 0px;
   }
   
-  footer button {
-    background-color: #d3e016da;
-    color: #070706;
-    padding: 10px 20px;
+  .footer_section2-list2 li{
+    padding: 8px;
+  }
+  .footer_section2-list2 a{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  
+  .footer_section2-form{
+    display: flex;
+    flex-direction: column;
+    margin: 48px 0px 0px 0px;
+    gap: 8px;
+  }
+  
+  .footer_section2-form h5{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  .footer_section2-form p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  
+  .footer_section2-form input{
+    color: #FFFFFF;
+    margin-right: 0px;
+    padding-left: 10px;
+    background-color: #093931;
+    border: 1px solid #FFFFFF;
+    width: 273px;
+    height: 35px;
+    border-radius: 18px 0px 0px 18px;
+    font-size: 14px;
+  }
+  
+  .footer_section2-form input::placeholder{
+    color: #FFFFFF;
+  }
+  .footer_section2-form button{
+    background-color: #F2C66D;
+    width: 114px;
+    height: 36px;
     border: none;
-    cursor: pointer;
+    border-radius: 0px 18px 18px 0px;
+    margin-left: 0;
   }
- 
+  
+  
+  .footer_section2-flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer_section2_finally{
+    display: flex;
+    justify-content: flex-start;
+    margin: 96px 0px 30px 130px;
+    gap: 770px;
+  }
+  
+  .footer_section2_finally-p p{
+    color: #FFFFFF;
+  }
+  
+  .footer_section2_finally-social_networks{
+    display: flex;
+    gap: 13px;
+  }
+  
