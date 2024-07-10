@@ -21,6 +21,7 @@ body {
 header {
   background-color: #093931;
   padding: 20px 0;
+  justify-content: space-between;
 }
 
 .container {
@@ -96,6 +97,7 @@ nav a {
 .hero-images {
   flex: 1;
   position: relative;
+  text-align: right;
 }
 
 .image-main {
